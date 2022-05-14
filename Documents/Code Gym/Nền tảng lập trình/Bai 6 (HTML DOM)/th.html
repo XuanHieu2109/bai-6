@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Hiển thị kết quả sử dụng hàm alert(): -->
+    <div class="bai1">
+        <h1>Bài tập 1</h1>
+        <button type="button" onclick="showMessage1();">Click Me!</button>
+        <script>
+            function showMessage1() {
+                alert('Xin chào!');
+            }
+        </script>
+    </div>
+
+    <!-- Hiển thị kết quả sử dụng thẻ HTML: -->
+    <div class="bai2">
+        <h1>Bài tập 2</h1>
+        <div id="messageDiv"></div>
+        <button type="button" onclick="showMessage2();">Click Me!</button>
+        <script>
+            function showMessage2() {
+                document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+            }
+        </script>
+    </div>
+
+    <!-- Hiển thị kết quả sử dụng hàm document.write(): -->
+    <div class="bai3">
+        <h1>Bài tập 3</h1>
+        <button type="button" onclick="showMessage3();">Click Me!</button>
+        <script>
+            function showMessage3() {
+                document.write('Hello');
+            }
+        </script>
+    </div>
+
+    <!-- Hiển thị kết quả sử dụng hàm console.log(): -->
+    <div class="bai4">
+        <h1>Bài tập 4</h1>
+        <button type="button" onclick="showMessage4();">Click Me!</button>
+        <script>
+            function showMessage4() {
+                console.log('Xin chào!');
+            }
+        </script>
+    </div>
+</body>
+
+</html>

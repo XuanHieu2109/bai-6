@@ -1,0 +1,334 @@
+html {
+    scroll-behavior: smooth;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+nav a {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav div {
+    text-transform: uppercase;
+    color: white;
+  }
+
+header {
+    height: 100vh;
+    
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 31%;
+}
+
+.sprites {
+    margin-top: 90px;
+    width: 900px;
+    height: 110px;
+    animation-name: sprites-move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sprites-move {
+    0%{transform: translate(130vw);}
+    100%{transform: translate(-40vw);}
+}
+
+.sprites img {
+    height: 110px;
+    width: auto;
+}
+
+.pacman1 {
+    transform: rotate(180deg);
+}
+
+.ghosts {
+    margin-right: 20px;
+}
+
+.ghost-red {
+    margin-right: 150px;
+}
+
+ #home a {
+    text-transform: uppercase;
+    margin-top: 110px;
+    font-size: 40px;
+    animation: blink 1s linear infinite;
+    position: absolute;
+	left: 35%;
+	top: 50%;
+    text-align: center;
+    text-decoration:none ;
+    color:white;
+}
+@keyframes blink {
+    50%{opacity: 0;}
+    80%{opacity: .5;}
+}
+
+#high-scores {
+    margin-top: 380px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#high-scores h1 {
+    font-size: 60px;
+    height: 67px;
+    color: yellow;
+}
+
+#high-scores h2 {
+    font-size: 33px;
+}
+
+#high-scores table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#high-scores table th {
+    font-size: 30px;
+     height: 70px;
+}
+
+#high-scores table td {
+    font-size: 30px;
+     height: 40px;
+}
+
+#high-scores table th,td {
+    padding: 5px;
+    width: 20%;
+}
+
+.score:nth-child(2) {
+    color: orange;
+}
+
+.score:nth-child(6) {
+    color: orange;
+}
+
+.score:nth-child(10) {
+    color: orange;
+}
+
+.score:nth-child(3) {
+    color: red;
+}
+.score:nth-child(7) {
+    color: red;
+}
+.score:nth-child(11) {
+    color: red;
+}
+.score:nth-child(4) {
+    color: cyan;
+}
+.score:nth-child(8) {
+    color: cyan;
+}
+.score:nth-child(5) {
+    color: rgb(250, 116, 138);
+}
+.score:nth-child(9) {
+    color: rgb(253, 104, 129);
+}
+
+#how-to-play {
+    margin-top: 500px;
+}
+.sprites2 {
+    margin-top: 90px;
+    width: 900px;
+    height: 110px;
+    animation-name: sprites-move2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sprites-move2 {
+    100%{transform: translate(130vw);}
+    0%{transform: translate(-40vw);}
+}
+
+.sprites2 img {
+    height: 80px;
+    width: auto;
+}
+
+.block2 {
+    margin-left: 20px;
+}
+
+.ghost-2 {
+    margin-left: 150px;
+}
+
+#how-to-play h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+#how-to-play span {
+    color: yellow;
+}
+
+#how-to-play p {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+#players h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 500px;
+}
+#players h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ghosts3 {
+    height: 80px;
+    width: auto;
+    transform: scaleX(-1);
+    margin-left: 260px;
+    margin-top: 15px;
+}
+
+#players div tr:nth-of-type(1) {
+    color: red;
+}
+
+#players div tr:nth-of-type(2) {
+    color: rgb(255, 119, 142);
+}
+
+#players div tr:nth-of-type(3) {
+    color: cyan;
+}
+
+#players div tr:nth-of-type(4) {
+    color: orange;
+}
+
+#players div tr td:nth-of-type(2) {
+    font-size: 40px;
+    width: auto;
+}
+
+#players div tr td:nth-of-type(3) {
+    font-size: 30px;
+    width: auto;
+}
+
+#players .points1 {
+    display: grid;
+    margin-top: 75px;
+    margin-left: 560px ;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    padding: 5px 0px;
+    width: 50%;
+}
+
+#players .points1 h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.square {
+    height: 45px;
+    width: 45px;
+    background-color: yellow;
+}
+
+#players .points2 {
+    display: grid;
+    margin-top: 80px;
+    margin-left: 580px ;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    padding: 5px 0px;
+    width: 50%;
+}
+#players .points2 h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.square1 {
+    height: 35px;
+    width: 35px;
+    background-color: yellow;
+}
+
+  #players .points3 {
+    display: grid;
+    margin-top: 80px;
+    margin-left: 600px ;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0px;
+    padding: 0px 0px;
+    width: 50%;
+    margin-bottom: 600px;
+}
+.square2 {
+    height: 15px;
+    width: 15px;
+    background-color: yellow;
+  }
+
+footer p {
+    font-size: 13px;
+    text-align: center;
+}
+
